@@ -13,7 +13,7 @@ class CountDown {
     }
 
     complete() {
-        heading.textContent = "Welcome To Vidyayan";
+        heading.style.display = 'none';
         app.innerHTML = '';
         message.style.display = 'initial';
         animation();
