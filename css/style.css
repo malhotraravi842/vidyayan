@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap');
+
+:root {
+    --color1: #fff;
+    --color2: #000000;
+    --box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+html, body {
+    height: 100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #f12711;
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711); 
+    background: linear-gradient(to right, #f5af19, #f12711);
+}
+.title {
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+}
+
+.count-down .timer {
+    float: left;
+    margin: 10px;
+    font-family: 'Quantico', sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+.timer h2 {
+    display: inline-block;
+    font-size: 150px;
+}
+
+.message {
+    position: absolute;
+    left: 47%;
+    top: 55%;
+    display: none;
+}
+
+.message a {
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #f12711;
+    background: var(--color1);
+    font-weight: 700;
+    box-shadow: var(--box-shadow);
+    transition: all 0.2s ease-in-out;
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.5em;
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+}
+.message a:hover {
+    transform: scale(1.1);
+}
+
+/* Animation */
+
+#confetti{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
