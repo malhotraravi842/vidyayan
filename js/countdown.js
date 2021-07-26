@@ -17,6 +17,7 @@ class CountDown {
         app.innerHTML = '';
         message.style.display = 'initial';
         animation();
+        play_audio();
     }
 
     getTime() {

@@ -1,6 +1,6 @@
 // Get the new year 
 const getLaunchDate = () => {
-    return new Date('July 26 2021 13:00:00');
+    return new Date('July 26 2021 11:10:00');
 }
 
 
@@ -9,7 +9,12 @@ const app = document.querySelector('.countdown-timer');
 const message = document.querySelector('.message');
 const heading = document.querySelector('.title');
 const confetti = document.querySelector('#confetti');
+const fireworkAudio = document.querySelector('.firework-audio');
 
+
+function play_audio() {
+    fireworkAudio.play();
+}
 
 const format = (t) => {
     return t < 10 ? '0' + t : t;
