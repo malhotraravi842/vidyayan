@@ -1,6 +1,6 @@
 // Get the new year 
 const getLaunchDate = () => {
-    return new Date('July 26 2021 13:00:00');
+    return new Date('July 26 2021 13:30:00');
 }
 
 
